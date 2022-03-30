@@ -35,17 +35,6 @@ Each friend object has the format:
 
 ## Instructions
 
-### Task 1: Project Set Up
-
-* [ ] Create a forked copy of this project.
-* [ ] Clone your OWN version of the repository in your terminal
-* [ ] cd into the project base directory `cd web-module-project-client-auth`
-* [ ] Download project dependencies by running `npm install`
-* [ ] Run `npm start` to start the client code.
-* [ ] Your server code will run automatically, just as they do in sprint challenges.
-
-### Task 2: Project Requirements
-
 #### Build the login component
 
 * [ ] Use the [mockup provided](./login_mockup.png) to build out a simple login component.
@@ -76,16 +65,3 @@ Each friend object has the format:
 #### Protect the /friends and /friends/add routes
 
 * [ ] Redirect the user to your login route if there is not a token in local storage.
-
-### Task 3: Stretch goals
-
-- [ ] Add in a modularized way to access protected endpoints using axiosWithAuth.
-- [ ] Add in a protected page and route that allows shows an information friends information. Use url params to get the id for this friend.
-- [ ] Style as you wish.
-
-### Submission Format
-
-- [ ] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
-- [ ] Connect your fork to Codegrade using the "Connect Git" button.
-- [ ] Find your newly created fork from the list and push your work to main.
-- [ ] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
