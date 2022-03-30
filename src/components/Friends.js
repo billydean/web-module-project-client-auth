@@ -11,18 +11,19 @@ function Friends() {
                 authorization: token,
             }
         })
-            .then(rs=>{})
-            .catch(er=>{})
+            .then(rs=>{setFriends(rs.data)})
+            .catch(er=>{console.error(er)})
     },[]);
 
     return ( 
     <div>
         <h2>My Friends</h2>
         <ul>
-            <li>Name - age - email</li>
-            <li>Name - age - email</li>
-            <li>Name - age - email</li>
-            <li>Name - age - email</li>
+            {
+                friends.map(friend=>{
+                    return <li>{friend.name} - {friend.age} - {friend.email}</li>
+                })
+            }
         </ul>
     </div>
         )
